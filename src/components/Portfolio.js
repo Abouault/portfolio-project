@@ -6,7 +6,7 @@ import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-wrapper">
+    <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
