@@ -419,6 +419,137 @@ align-items: center;
   margin-top: 3%!important;
 }
 
+/* CONTACTS COMPONENT */
+
+.contacts{
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1{
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/* INPUTS */
+
+.contacts input, .contacts textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border-top: 0!important;
+  border-right: 0!important;
+  border-left: 0!important;
+  border: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0!important;
+  box-shadow: none!important;
+  top: 0;
+  margin-bottom: 1rem ;
+  padding-left: 0!important;
+}
+
+.contacts .container{
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus{
+  background: transparent;
+  color: var(--primary-orange);
+  border: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea{
+  height: 12.2rem!important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line{
+  position: relative;
+  width: 0;
+  height: 00.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+  top: -0.8rem;
+}
+
+input:focus+.line, textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control{
+  margin: -0.3rem 0;
+}
+
+textarea.form-control{
+  margin: -0.3rem 0;
+}
+
+/* MEDIA */
+
+@media(max-width: 768px){
+  .contacts{
+    overflow: hidden;
+  }
+  .contacts .container{
+    padding: 0 1rem;
+  }
+
+  .contacts p{
+    padding: 0 0.4rem;
+  }
+}
+
+/* FOOTER COMPONENT */
+
+.footer{
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+@media(max-width: 768px){
+  .block{
+    padding: 10px;
+    text-align: center!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 
 
 

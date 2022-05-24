@@ -9,8 +9,8 @@ const TestimonialsCarousel = () => {
       infiniteLoop={true}
       showThumbs={false}
       showStatus={false}
-      /* autoPlay={true}
-      interval={3000} */
+      autoPlay={true}
+      interval={3000}
     >
       <>
         <img
