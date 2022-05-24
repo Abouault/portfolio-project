@@ -1,7 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const sendForm = () => {
+    setIsSubmitting(true);
+    if (isSubmitting) {
+      toast.success("Message envoyé avec success!", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
   const serviceId = "service_nmhi4vs";
   const templateId = "template_insj1gn";
   const publicKey = "PbkIZCZGglqE822Kq";
@@ -24,10 +43,10 @@ const Contacts = () => {
   return (
     <div id="contact" className="contacts">
       <div className="text-center">
-        <h1>contact me</h1>
+        <h1>contactez moi</h1>
         <p>
-          Please fill out the form and describe your project needs and ill
-          contact you as soon as possible.
+          Veuillez remplir le formulaire et décrire les besoins de votre projet.
+          Je vous recontacterais dès que possible.
         </p>
       </div>
       <div className="container">
@@ -37,9 +56,10 @@ const Contacts = () => {
               {/* NAME INPUT */}
               <div className="text-center">
                 <input
+                  required
                   type="text"
                   className="form-control"
-                  placeholder="Name"
+                  placeholder="Nom"
                   name="name"
                 />
                 <div className="line"></div>
@@ -49,7 +69,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Phone Number"
+                  placeholder="Téléphone*"
                   name="phone"
                 />
                 <div className="line"></div>
@@ -57,6 +77,7 @@ const Contacts = () => {
               {/* EMAIL INPUT */}
               <div className="text-center">
                 <input
+                  required
                   type="email"
                   className="form-control"
                   placeholder="Email"
@@ -67,9 +88,10 @@ const Contacts = () => {
               {/* SUBJECT INPUT */}
               <div className="text-center">
                 <input
+                  required
                   type="text"
                   className="form-control"
-                  placeholder="Subject"
+                  placeholder="Sujet"
                   name="subject"
                 />
                 <div className="line"></div>
@@ -79,15 +101,21 @@ const Contacts = () => {
               {/* TEXTAREA */}
               <div className="text-center">
                 <textarea
+                  required
                   type="text"
                   className="form-control"
                   name="description"
-                  placeholder="Please describe shortly your project..."
+                  placeholder="Veuillez décrire brièvement votre projet..."
                 ></textarea>
                 <div className="line"></div>
               </div>
-              <button className="btn-main-offer contact-btn" type="submit">
-                contact me
+              <ToastContainer />
+              <button
+                onClick={sendForm}
+                className="btn-main-offer contact-btn"
+                type="submit"
+              >
+                envoyer
               </button>
             </div>
           </div>

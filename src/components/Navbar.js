@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.png";
+import logo from "./logo-aymeric.png";
 import { Link } from "react-scroll";
 
 // REACT FONTAWESOME IMPORTS
@@ -29,12 +29,12 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
               <Link to="home" offset={-110} className="nav-link" href="#">
-                Home
+                accueil
               </Link>
             </li>
             <li className="nav-item">
               <Link to="about" offset={-110} className="nav-link" href="#">
-                about me
+                a propos
               </Link>
             </li>
             <li className="nav-item">
@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link to="experience" offset={-110} className="nav-link" href="#">
-                experience
+                experiences
               </Link>
             </li>
             <li className="nav-item">

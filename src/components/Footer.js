@@ -27,14 +27,14 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6 block">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <a className="footer-nav">Accueil</a>
                 <br />
-                <a className="footer-nav">About me</a>
+                <a className="footer-nav">A propos</a>
                 <br />
                 <a className="footer-nav">Services</a>
               </div>
               <div className="col">
-                <a className="footer-nav">Experience</a>
+                <a className="footer-nav">Experiences</a>
                 <br />
                 <a className="footer-nav">Portfolio</a>
                 <br />
@@ -57,7 +57,8 @@ const Footer = () => {
             </div>
             <p className="pt-3 text-center">
               Copyright&copy
-              {new Date().getFullYear()}&nbsp;New Horizon | All Rights Reserved
+              {new Date().getFullYear()}&nbsp;Bouault Aymeric | Tous droits
+              réservés
             </p>
           </div>
         </div>

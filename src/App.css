@@ -20,7 +20,7 @@ body{
 /* NAVBAR */
 
 .logo{
-  width: 6.25rem;
+  width: 11.25rem;
 }
 
 
@@ -61,7 +61,7 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url(laptop.jpg) no-repeat;
+  background: url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -305,14 +305,44 @@ nav ul li {
 }
 
 .portfolio-image {
-  width: 15rem!important;
+  width: 25rem!important;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
+  height: 12rem;
 }
 
 .portfolio-image-box{
   position: relative!important;
   margin: 1rem;
+  width: auto!important;
+}
+
+@media(max-width: 768px){
+  .portfolio-image {
+    width: 15rem!important;
+  }
+  .overflow{
+    width: 15rem!important;
+  }
+  .portfolio-icon{
+    margin-left: -8rem!important;
+  }
+}
+
+/* PORTFOLIO MODALS */
+
+.portfolio-image-modal{
+  width: 30rem!important;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+  height: 20rem;
+}
+
+@media(max-width: 768px){
+  .portfolio-image-modal{
+    width: 100%!important;
+    height: 15rem;
+  }
 }
 
 
@@ -322,8 +352,8 @@ nav ul li {
   position: absolute;
   opacity: 0;
   background: var(--primary-black);
-  width: 15rem;
-  height: 8rem;
+  width: 25rem;
+  height: 12rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -337,8 +367,8 @@ nav ul li {
 .portfolio-icon{
   position: absolute;
   opacity: 1;
-  margin-left: -8rem;
-  margin-top: 3.6rem;
+  margin-left: -13rem;
+  margin-top: 5rem;
   color: var(--primary-orange);
   font-size: 1.5rem;
 }
