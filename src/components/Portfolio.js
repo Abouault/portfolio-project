@@ -5,7 +5,6 @@ import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import "react-popupbox/dist/react-popupbox.css";
 
 import PropTypes from "prop-types";
-import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -13,6 +12,10 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+
+import CEE from './CEE.png';
+import karuma from './karuma.png';
+import portfolio from './portfolio.png';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -78,7 +81,7 @@ const Portfolio = () => {
             <div onClick={handleOpenModal1} className="portfolio-image-box">
               <img
                 className="portfolio-image"
-                src="https://mobirise.com/assets52/images/poster.png"
+                src={CEE}
                 alt=""
               />
               <div className="overflow"></div>
@@ -87,7 +90,7 @@ const Portfolio = () => {
             <div onClick={handleOpenModal2} className="portfolio-image-box">
               <img
                 className="portfolio-image"
-                src="https://i.imgur.com/ConTf4t.png"
+                src={karuma}
                 alt=""
               />
               <div className="overflow"></div>
@@ -97,17 +100,7 @@ const Portfolio = () => {
             <div onClick={handleOpenModal3} className="portfolio-image-box">
               <img
                 className="portfolio-image"
-                src="https://static.tildacdn.com/tild6633-3833-4733-a136-323664656232/Screenshot_2021-01-1.png"
-                alt=""
-              />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-
-            <div onClick={handleOpenModal4} className="portfolio-image-box">
-              <img
-                className="portfolio-image"
-                src="http://www.designhill.com/design-blog/wp-content/uploads/2020/01/Inside-Blog-min.jpg"
+                src={portfolio}
                 alt=""
               />
               <div className="overflow"></div>
@@ -125,28 +118,20 @@ const Portfolio = () => {
           id="customized-dialog-title"
           onClose={handleCloseModal1}
         >
-          Create your first website
+          CEE Santé & Management
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <img
             className="portfolio-image-modal"
-            src="https://mobirise.com/assets52/images/poster.png"
+            src={CEE}
             alt=""
           />
         </DialogContent>
         <DialogActions>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              accusantium.
-            </p>
-            <p>
               Demo:&nbsp;
-              <a href="#">hhtps://demo.com</a>
-            </p>
-            <p>
-              Github:&nbsp;
-              <a href="#">hhtps://github.com</a>
+              <a href="https://cee-sante-management.com/">https://cee-sante-management.com/</a>
             </p>
           </div>
         </DialogActions>
@@ -161,28 +146,20 @@ const Portfolio = () => {
           id="customized-dialog-title"
           onClose={handleCloseModal2}
         >
-          Find your perfect home
+          karuma studio
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <img
             className="portfolio-image-modal"
-            src="https://i.imgur.com/ConTf4t.png"
+            src={karuma}
             alt=""
           />
         </DialogContent>
         <DialogActions>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              accusantium.
-            </p>
-            <p>
               Demo:&nbsp;
-              <a href="#">hhtps://demo.com</a>
-            </p>
-            <p>
-              Github:&nbsp;
-              <a href="#">hhtps://github.com</a>
+              <a href="https://karuma.fr/">https://karuma.fr/</a>
             </p>
           </div>
         </DialogActions>
@@ -197,64 +174,20 @@ const Portfolio = () => {
           id="customized-dialog-title"
           onClose={handleCloseModal3}
         >
-          Home renovation services
+          portfolio
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <img
             className="portfolio-image-modal"
-            src="https://static.tildacdn.com/tild6633-3833-4733-a136-323664656232/Screenshot_2021-01-1.png"
+            src={portfolio}
             alt=""
           />
         </DialogContent>
         <DialogActions>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              accusantium.
-            </p>
-            <p>
               Demo:&nbsp;
-              <a href="#">hhtps://demo.com</a>
-            </p>
-            <p>
-              Github:&nbsp;
-              <a href="#">hhtps://github.com</a>
-            </p>
-          </div>
-        </DialogActions>
-      </BootstrapDialog>
-
-      <BootstrapDialog
-        onClose={handleCloseModal4}
-        aria-labelledby="customized-dialog-title"
-        open={openModal4}
-      >
-        <BootstrapDialogTitle
-          id="customized-dialog-title"
-          onClose={handleCloseModal4}
-        >
-          Facebook cover photo
-        </BootstrapDialogTitle>
-        <DialogContent dividers>
-          <img
-            className="portfolio-image-modal"
-            src="http://www.designhill.com/design-blog/wp-content/uploads/2020/01/Inside-Blog-min.jpg"
-            alt=""
-          />
-        </DialogContent>
-        <DialogActions>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              accusantium.
-            </p>
-            <p>
-              Demo:&nbsp;
-              <a href="#">hhtps://demo.com</a>
-            </p>
-            <p>
-              Github:&nbsp;
-              <a href="#">hhtps://github.com</a>
+              <a href="https://abouault.github.io/portfolio-project/">https://abouault.github.io/portfolio-project/</a>
             </p>
           </div>
         </DialogActions>

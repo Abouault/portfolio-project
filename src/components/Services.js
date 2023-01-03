@@ -1,9 +1,14 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { BsWordpress } from 'react-icons/bs';
+import { MdDesignServices } from 'react-icons/md';
+import { DiCss3 } from 'react-icons/di';
 
-import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookSquare, faGoogle } from "@fortawesome/free-brands-svg-icons";
+const listStyle = {
+  listStyleType: "none"
+}
 
 const Services = () => {
   return (
@@ -16,48 +21,49 @@ const Services = () => {
               <div className="circle">
                 <FontAwesomeIcon className="icon" icon={faDesktop} size="2x" />
               </div>
+              <h3>Développement Web</h3>
+              <ul style={listStyle}>
+                <li>HTML, CSS</li>
+                <li>Javascript</li>
+                <li>Framework et bibliothèque Web</li>
+                <li>Méthodologie de developpement agile</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="box">
+              <div className="circle">
+                <BsWordpress className="icon" size={30} />
+              </div>
+              <h3>Wordpress</h3>
+              <ul style={listStyle}>
+                <li>Installation de thèmes/plugins</li>
+                <li>Developpement de site Web Worpress</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="box">
+              <div className="circle">
+                <DiCss3 className="icon" size={30} />
+              </div>
+              <h3>Intégration Web</h3>
+              <ul style={listStyle}>
+                <li>Librairie CSS</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="box">
+              <div className="circle">
+                <MdDesignServices className="icon" size={30} />
+              </div>
               <h3>Web Design</h3>
-              <p>
-                I approach each project individually and always focus on the
-                result.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
-              </div>
-              <h3>Web Development</h3>
-              <p>Your website will be build with an new proven technologies.</p>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faFacebookSquare}
-                  size="2x"
-                />
-              </div>
-              <h3>Facebook Ads SMM</h3>
-              <p>
-                Your potential clients well see your services or product on
-                Facebook
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon className="icon" icon={faGoogle} size="2x" />
-              </div>
-              <h3>Google Ads</h3>
-              <p>
-                Your service or product will appear at the top of the Google
-                search
-              </p>
+              <ul style={listStyle}>
+                <li>Adobe Illustrator / photoshop</li>
+                <li>Maquettage Web</li>
+              </ul>
             </div>
           </div>
         </div>

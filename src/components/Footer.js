@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6 block">
             <div className="d-flex">
-              <p>city Moscow Main st 2020 office #223</p>
+              <p>6 rue camille desmoulins 69007</p>
             </div>
             <div className="d-flex">
-              <a href="tel:555-555-555">+7(960)555-555</a>
+              <a href="tel:555-555-555">06 64 75 46 18</a>
             </div>
             <div className="d-flex">
               <p>aymeric.bouault@gmail.com</p>
