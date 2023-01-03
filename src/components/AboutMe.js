@@ -16,15 +16,11 @@ const AboutMe = () => {
         <div className="col-lg-6 col-xm-12">
           <h1 className="about-heading">a propos</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Je m'appelle Aymeric et je suis développeur web depuis plus de 2 ans. J'ai obtenu mon diplôme en informatique à la Wild Code School.
+
+            En dehors de mon travail, j'aime rester à jour sur les dernières technologies et tendances dans le développement web.
+
+            Je suis un développeur web passionné et motivé, et j'aime travailler en équipe pour atteindre nos objectifs communs. Si vous avez besoin de quelqu'un pour développer votre prochain site web ou application, n'hésitez pas à me contacter !
           </p>
         </div>
       </div>

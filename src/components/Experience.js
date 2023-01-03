@@ -11,13 +11,19 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2014-2015</h3>
+            <h3>sept. 2020 - fevr. 2021</h3>
+
+            <h4>Développeur WordPress - indépendant</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              officiis aut quibusdam vel perferendis deleniti tenetur ea
-              doloremque! Repellat aut debitis modi culpa commodi. Dolorum
-              libero ut quae mollitia aspernatur recusandae inventore ducimus.
-              Placeat perferendis, explicabo deserunt atque voluptates fugiat?
+              Création de 2 sites en WordPress : <br />
+              - Site CEE Santé & Management pour des consultants indépendants<br />
+              - Site Karuma pour un studio d'enregistrement
+            </p>
+            <p>
+              Formations autodidactes sur la suite Adobe :<br />
+              - Illustrator (logos, bannières)<br />
+              - Adobe XD (maquettes web)<br />
+              - PhotoShop (retouches photos)
             </p>
           </div>
         </div>
@@ -26,13 +32,12 @@ const Experience = () => {
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2015-2016</h3>
+            <h3>fevr. 2021 - avr. 2022</h3>
+            <h4>Développeur Web Front-end - Association Hozana</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              officiis aut quibusdam vel perferendis deleniti tenetur ea
-              doloremque! Repellat aut debitis modi culpa commodi. Dolorum
-              libero ut quae mollitia aspernatur recusandae inventore ducimus.
-              Placeat perferendis, explicabo deserunt atque voluptates fugiat?
+              Développement et maintenance du site Web Hozana. <br />
+              - Développement de nouvelles fonctionnalités. <br />
+              - Maintenance de site => SEO, résolution de bug, écriture de test, amélioration du code.
             </p>
           </div>
         </div>
@@ -41,43 +46,11 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2016-2017</h3>
+            <h3>sept. 2020 - févr. 2021</h3>
+            <h4>Developpeur Web et Web mobile - Wild Code School</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              officiis aut quibusdam vel perferendis deleniti tenetur ea
-              doloremque! Repellat aut debitis modi culpa commodi. Dolorum
-              libero ut quae mollitia aspernatur recusandae inventore ducimus.
-              Placeat perferendis, explicabo deserunt atque voluptates fugiat?
-            </p>
-          </div>
-        </div>
-
-        {/* 4 */}
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2017-2018</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              officiis aut quibusdam vel perferendis deleniti tenetur ea
-              doloremque! Repellat aut debitis modi culpa commodi. Dolorum
-              libero ut quae mollitia aspernatur recusandae inventore ducimus.
-              Placeat perferendis, explicabo deserunt atque voluptates fugiat?
-            </p>
-          </div>
-        </div>
-
-        {/* 5 */}
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <h3>2018-2020</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              officiis aut quibusdam vel perferendis deleniti tenetur ea
-              doloremque! Repellat aut debitis modi culpa commodi. Dolorum
-              libero ut quae mollitia aspernatur recusandae inventore ducimus.
-              Placeat perferendis, explicabo deserunt atque voluptates fugiat?
+              Apprentissage du développement de sites internet interactifs qui utilisent les technologies  HTML, CSS et JavaScript.<br />
+              La réalisation de plusieurs projets professionnels, maîtrise des langages informatiques et Frameworks suivants : React/NodeJS
             </p>
           </div>
         </div>
